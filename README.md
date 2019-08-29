@@ -1,17 +1,14 @@
-# WIP: is-velte
+# is-velte
 
-Create any html tag using a string prop with Svelte
+Create any html tag in Svelte using it's name as string
+
+### WIP
+
+That project is on early stage, so, maybe the API can change a bit.
+Some features actually are limited by Svelte itself.
 
 ### Usage
 
-```html
-<script>
-  import Is from "is-velte";
-</script>
+Please, check all the details on:
 
-<Is tag="p">
-  Hello Paragraph
-</Is>
-```
-
-The default `tag` prop is a `div` string.
+[https://marceloadsj.github.io/is-velte/](https://marceloadsj.github.io/is-velte/)
