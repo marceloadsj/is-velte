@@ -1,60 +1,23 @@
 <script>
-	export let segment;
+  import Icon from "./Icon.svelte";
+  import Button from "./Button.svelte";
 </script>
 
-<style>
-	nav {
-		border-bottom: 1px solid rgba(255,62,0,0.1);
-		font-weight: 300;
-		padding: 0 1em;
-	}
+<div
+  class="flex justify-between bg-white z-10 px-5 py-2 items-center border-b border-gray-200 fixed w-full"
+>
+  <div>
+    <Icon type="tag"></Icon> is-velte
+    <div class="p-1 bg-indigo-500 text-white inline rounded text-xs">0.0.1</div>
+  </div>
 
-	ul {
-		margin: 0;
-		padding: 0;
-	}
+  <Button link href="https://github.com/marceloadsj/is-velte" target="_blank"
+    ><Icon type="github"></Icon> Github</Button
+  >
 
-	/* clearfix */
-	ul::after {
-		content: '';
-		display: block;
-		clear: both;
-	}
-
-	li {
-		display: block;
-		float: left;
-	}
-
-	.selected {
-		position: relative;
-		display: inline-block;
-	}
-
-	.selected::after {
-		position: absolute;
-		content: '';
-		width: calc(100% - 1em);
-		height: 2px;
-		background-color: rgb(255,62,0);
-		display: block;
-		bottom: -1px;
-	}
-
-	a {
-		text-decoration: none;
-		padding: 1em 0.5em;
-		display: block;
-	}
-</style>
-
-<nav>
-	<ul>
-		<li><a class='{segment === undefined ? "selected" : ""}' href='.'>home</a></li>
-		<li><a class='{segment === "about" ? "selected" : ""}' href='about'>about</a></li>
-
-		<!-- for the blog link, we're using rel=prefetch so that Sapper prefetches
-		     the blog data when we hover over the link or tap it on a touchscreen -->
-		<li><a rel=prefetch class='{segment === "blog" ? "selected" : ""}' href='blog'>blog</a></li>
-	</ul>
-</nav>
+  <!-- <button
+  class="text-xs bg-indigo-600 px-2 py-1 rounded text-indigo-900 block hover:bg-indigo-400"
+>
+  Donate
+</button> -->
+</div>
