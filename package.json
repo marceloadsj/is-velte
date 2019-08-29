@@ -26,6 +26,6 @@
     "url": "https://github.com/marceloadsj/is-velte.git"
   },
   "peerDependencies": {
-    "svelte": "^3.9.1"
+    "svelte": "3.9.1"
   }
 }
