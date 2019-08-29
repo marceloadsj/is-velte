@@ -1,6 +1,31 @@
 {
   "name": "is-velte",
   "version": "0.0.1",
+  "description": "Create any html tag in Svelte using it's name as string",
+  "keywords": [
+    "Svelte",
+    "html",
+    "tag",
+    "string",
+    "component"
+  ],
+  "homepage": "https://github.com/marceloadsj/is-velte",
+  "bugs": {
+    "url": "https://github.com/marceloadsj/is-velte/issues",
+    "email": "marceloadsj1@gmail.com"
+  },
+  "license": "MIT",
   "main": "index.js",
-  "license": "MIT"
+  "author": {
+    "name": "Marcelo Junior",
+    "email": "marceloadsj1@gmail.com",
+    "url": "https://github.com/marceloadsj"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/marceloadsj/is-velte.git"
+  },
+  "peerDependencies": {
+    "svelte": "^3.9.1"
+  }
 }
